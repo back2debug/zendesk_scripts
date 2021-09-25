@@ -1,0 +1,20 @@
+/*set the color of the dot for the system status-TM*/
+.color-dot {
+ 	border-radius: 50%;
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin-right:2px;
+  
+.color-dot.none{
+  background:#2ecc71;
+}
+.color-dot.critical{
+  background-color:#e74c3c;
+}
+.color-dot.major{
+   background-color:#e67e22;
+}
+.color-dot.minor{
+  background-color:#f1c40f;
+}
