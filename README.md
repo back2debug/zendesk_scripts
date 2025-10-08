@@ -95,11 +95,6 @@ python3 ticktets_to_excel_file.py
 ## Security Reminder
 
 ⚠️ **Never commit API credentials to version control.** Use environment variables or secure credential management systems.
-
-## License
-
-These scripts are provided as-is for reference purposes.
-
 ---
 
 *Created during tenure as Support Engineer | Last updated: March 2023*
