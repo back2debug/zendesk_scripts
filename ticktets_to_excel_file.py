@@ -4,11 +4,7 @@ import pandas as pd
 
 
 
-with open('serialized_data_file.p', mode='rb') as f:
-	ticket_review = pickle.load(f)
-
-#.p file is in the same directory as script
-#read data in serialized file and store in a variable ticket_review
+# .p file must be in the same directory as this script
 ticket_review = pd.read_pickle('serialized_data_file.p')
 
 #create dataframes for all the lists

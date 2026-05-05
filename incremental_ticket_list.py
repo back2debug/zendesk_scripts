@@ -1,6 +1,7 @@
 import requests
 import json
 import pickle
+import time
 
 
 USER = 'EMAIL' + '/token'
@@ -11,7 +12,8 @@ user_list = []
 organizations_list = []
 metrics_sets_list = []
 
-url = 'https://your domain.zendesk.com/api/v2/incremental/tickets.json?start_time=1493640000&include=users,organizations,metric_sets'
+START_TIME = 1493640000  # Unix timestamp — set to your desired start date
+url = 'https://your-domain.zendesk.com/api/v2/incremental/tickets.json?start_time={}&include=users,organizations,metric_sets'.format(START_TIME)
 session = requests.Session()
 session.auth = (USER, PWD)
 count = 1000

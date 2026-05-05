@@ -3,6 +3,7 @@ import pickle
 import time
 
 
+
 USER = 'EMAIL' + '/token'
 PWD = 'INSERT KEY'
 
@@ -12,7 +13,7 @@ organizations_list = []
 metrics_sets_list = []
 
 #sideloads the users, organization, metrics for the tickets
-url = 'https://your domain.zendesk.com/api/v2/tickets.json?include=users,organizations,metric_sets'
+url = 'https://your-domain.zendesk.com/api/v2/tickets.json?include=users,organizations,metric_sets'
 session = requests.Session()
 session.auth = (USER, PWD)
 
